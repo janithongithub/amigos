@@ -7,17 +7,15 @@ public class Person {
     private final UUID id;
     private final String name;
     
-    public void setId(UUID id){
+    public Person(UUID id, String name){
         this.id = id;
+        this.name = name;
     }
 
     public UUID getId(){
         return id;
     }
-
-    public void setName(Strinf name){
-        this.name = name;
-    }
+    
     public String getName(){
         return name;
     }
