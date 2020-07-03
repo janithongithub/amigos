@@ -13,7 +13,7 @@ public interface PersonDao {
    int insertPerson(UUID id, Person person);
 
    // insert person with generated id 
-    default int addPerson(Person person){       
+    default int insertPerson(Person person){       
         UUID id = UUID.randomUUID();        // generate id
         return(insertPerson(id, person));   //return 1 if sucessful 
 
